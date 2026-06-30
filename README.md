@@ -32,7 +32,7 @@ Repository นี้จัดทำขึ้นเพื่อใช้สำห
 
 ```text
 .
-├── Week1/
-├── Week2/
+├── Sec2_Week1_Lab1_663380518_4/
+├── Sec2_Week2_Lab2_663380518_4/
 └── README.md
 ```
