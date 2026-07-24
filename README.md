@@ -41,5 +41,8 @@ Repository นี้จัดทำขึ้นเพื่อใช้สำห
 .
 ├── Sec2_Week1_Lab1_663380518_4/
 ├── Sec2_Week2_Lab2_663380518_4/
+├── Sec2_Week3_Lab3_663380518_4/
+├── Sec2_Week4_Lab4_663380518_4/
+├── Sec2_Week5_Lab5_663380518_4/
 └── README.md
 ```
