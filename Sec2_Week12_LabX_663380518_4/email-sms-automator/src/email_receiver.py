@@ -71,6 +71,17 @@ class EmailReceiver:
             finally:
                 self.mail = None
 
+    def _imap_quote(self, value: str) -> str:
+        """
+        Quotes a string value for use inside an IMAP SEARCH command.
+        imaplib does not quote values automatically, so unquoted spaces
+        would make the server return: BAD 'Could not parse command'.
+
+        :param value: Raw search value (e.g. sender or subject substring).
+        :return: Double-quoted IMAP-safe string.
+        """
+        return '"' + value.replace('\\', '\\\\').replace('"', '\\"') + '"'
+
     def search_emails(
         self,
         mailbox: str = 'INBOX',
@@ -94,9 +105,9 @@ class EmailReceiver:
             self.mail.select(mailbox)
             search_query = [criteria]
             if from_sender:
-                search_query.extend(['FROM', from_sender])
+                search_query.extend(['FROM', self._imap_quote(from_sender)])
             if subject_contains:
-                search_query.extend(['SUBJECT', subject_contains])
+                search_query.extend(['SUBJECT', self._imap_quote(subject_contains)])
 
             status, email_ids = self.mail.search(None, *search_query)
             if status != 'OK':
