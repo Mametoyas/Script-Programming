@@ -1,0 +1,23 @@
+# Aggregated dependencies for all labs in this repository
+# Install with: pip install -r requirements.txt
+
+# --- Web scraping (Week 7) ---
+requests==2.34.2
+certifi==2026.7.22
+charset-normalizer==3.4.9
+idna==3.18
+urllib3==2.7.0
+beautifulsoup4==4.15.0
+soupsieve==2.9.2
+selenium==4.49.0
+webdriver-manager==4.1.2
+
+# --- Spreadsheet / document processing (Week 10-12) ---
+openpyxl==3.1.5
+et_xmlfile==2.0.0
+PyPDF2==3.0.1
+reportlab==5.0.1
+python-docx==1.2.0
+
+# --- Email / SMS automation (Week 12) ---
+python-dotenv==1.2.3

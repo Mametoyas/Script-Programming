@@ -44,5 +44,33 @@ Repository นี้จัดทำขึ้นเพื่อใช้สำห
 ├── Sec2_Week3_Lab3_663380518_4/
 ├── Sec2_Week4_Lab4_663380518_4/
 ├── Sec2_Week5_Lab5_663380518_4/
+├── Sec2_Week6_Lab6_663380518_4/
+├── Sec2_Week7_Lab7_663380518_4/
+├── Sec2_Week7_LabX ADV1_663380518-4/
+├── Sec2_Week8_Lab8_663380518_4/
+├── Sec2_Week10_LabX_663380518_4/
+├── Sec2_Week10_LabX ADV_663380518_4/
+├── Sec2_Week11_LabX_663380518_4/
+├── Sec2_Week11_LabX ADV_663380518_4/
+├── Sec2_Week12_LabX_663380518_4/
+├── Sec2_Week12_LabX ADV_663380518_4/
+├── requirements.txt
 └── README.md
 ```
+
+---
+
+## Setup
+
+ติดตั้ง dependencies ที่ใช้ในทุก Lab:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## Notes
+
+- โปรเจกต์ที่ต้องใช้ credential (เช่นอีเมล/SMS) จะอ่านค่าจากไฟล์ `.env`
+- **ห้าม commit ไฟล์ `.env`** ที่มีรหัสจริงขึ้น repository (มี `.gitignore` กันไว้แล้วในแต่ละโปรเจกต์)
